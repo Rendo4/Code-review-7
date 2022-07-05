@@ -15,4 +15,16 @@ namespace Bakery.Tests
       Assert.AreEqual(10, newBread.getPrice());
     }
   }
+  [TestClass]
+  public class PastryTests
+  {
+  [TestMethod]
+  public void isPastryPriceRead()
+    {
+      Pastry newPastry = new Pastry(6);
+      Assert.AreEqual(6, newPastry.getPastries());
+      newPastry.SetPrice();
+      Assert.AreEqual(10, newPastry.getPrice());
+    }
+  }
 }

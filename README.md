@@ -25,7 +25,7 @@ _Hello and thank you for viewing 'Pierre's Bakery' application! This project use
 * _use the command "cd desktop"_
 * _use the command "git clone ()_
 * _It should now be on your desktop!_ 
-* _In your terminal cd desktop/code-review-7_
+* _In your terminal cd desktop/code-review-7/Bakery_
 * _Run the command "dotnet restore" followed by "dotnet run" the application should be running to play_
 * _cd .. / cd ""_
 * _Run the command "dotnet restore" followed by "dotnet test" the test show passing in the terminal_
