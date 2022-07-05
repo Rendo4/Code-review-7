@@ -14,6 +14,13 @@ namespace Bakery.Tests
       newBread.SetPrice();
       Assert.AreEqual(10, newBread.getPrice());
     }
+     [TestMethod]
+    public void isBreadPricLooping()
+    {
+      Bread newBread = new Bread(7);
+      newBread.SetPrice();
+      Assert.AreEqual(25, newBread.getPrice());
+    }
   }
   [TestClass]
   public class PastryTests
@@ -25,6 +32,13 @@ namespace Bakery.Tests
       Assert.AreEqual(6, newPastry.getPastries());
       newPastry.SetPrice();
       Assert.AreEqual(10, newPastry.getPrice());
+    }
+     [TestMethod]
+    public void isPastryPriceLooping()
+    {
+      Pastry newPastry = new Pastry(10);
+      newPastry.SetPrice();
+      Assert.AreEqual(17, newPastry.getPrice());
     }
   }
 }
