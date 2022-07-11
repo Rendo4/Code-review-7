@@ -10,7 +10,7 @@ namespace Bakery.Tests
     public void isBreadModelMade()
     {
       Bread newBread = new Bread(3);
-      Assert.AreEqual(3, 0);
+      Assert.AreEqual(3, newBread.Ordered);
     }
     [TestMethod]
     public void isBreadPriceRead()
@@ -35,7 +35,7 @@ namespace Bakery.Tests
   public void isPastryModelMade()
   {
     Pastry newPastry = new Pastry(3);
-    Assert.AreEqual(3, 0);
+    Assert.AreEqual(3, newPastry.Ordered);
   }
   [TestMethod]
   public void isPastryPriceRead()
