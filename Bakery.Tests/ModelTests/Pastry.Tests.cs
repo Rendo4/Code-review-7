@@ -4,43 +4,13 @@ using Bakery;
 namespace Bakery.Tests 
 {
   [TestClass]
-  public class BreadTests
-  {
-    [TestMethod]
-    public void isBreadModelMade()
-    {
-      Bread newBread = new Bread(3);
-      Assert.AreEqual(typeof(int), newBread.GetType());
-    }
-    [TestMethod]
-    public void isBreadPriceRead()
-    {
-      Bread newBread = new Bread(3);
-      newBread.SetPrice();
-      Assert.AreEqual(10, newBread.Price);
-    }
-    [TestMethod]
-    public void isBreadLovesRead()
-    {
-      Bread newBread = new Bread(3);
-      Assert.AreEqual(3, newBread.Ordered);
-    }
-     [TestMethod]
-    public void isBreadPricLooping()
-    {
-      Bread newBread = new Bread(7);
-      newBread.SetPrice();
-      Assert.AreEqual(25, newBread.Price);
-    }
-  }
-  [TestClass]
   public class PastryTests
   {
     [TestMethod]
     public void isPastryModelMade()
     {
       Pastry newPastry = new Pastry(3);
-      Assert.AreEqual(typeof(int), newPastry.GetType());
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     [TestMethod]
     public void isPastriesOrderedRead()
