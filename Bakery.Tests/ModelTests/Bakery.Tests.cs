@@ -7,6 +7,12 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void isBreadModelMade()
+    {
+      Bread newBread = new Bread(3);
+      Assert.AreEqual(3, 0);
+    }
+    [TestMethod]
     public void isBreadPriceRead()
     {
       Bread newBread = new Bread(3);
@@ -25,6 +31,12 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
+  [TestMethod]
+  public void isPastryModelMade()
+  {
+    Pastry newPastry = new Pastry(3);
+    Assert.AreEqual(3, 0);
+  }
   [TestMethod]
   public void isPastryPriceRead()
     {
