@@ -10,15 +10,20 @@ namespace Bakery.Tests
     public void isBreadModelMade()
     {
       Bread newBread = new Bread(3);
-      Assert.AreEqual(3, newBread.Ordered);
+      Assert.AreEqual(typeof(int), newBread.GetType());
     }
     [TestMethod]
     public void isBreadPriceRead()
     {
       Bread newBread = new Bread(3);
-      Assert.AreEqual(3, newBread.Ordered);
       newBread.SetPrice();
       Assert.AreEqual(10, newBread.Price);
+    }
+    [TestMethod]
+    public void isBreadLovesRead()
+    {
+      Bread newBread = new Bread(3);
+      Assert.AreEqual(3, newBread.Ordered);
     }
      [TestMethod]
     public void isBreadPricLooping()
@@ -31,21 +36,26 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
-  [TestMethod]
-  public void isPastryModelMade()
-  {
-    Pastry newPastry = new Pastry(3);
-    Assert.AreEqual(3, newPastry.Ordered);
-  }
-  [TestMethod]
-  public void isPastryPriceRead()
+    [TestMethod]
+    public void isPastryModelMade()
+    {
+      Pastry newPastry = new Pastry(3);
+      Assert.AreEqual(typeof(int), newPastry.GetType());
+    }
+    [TestMethod]
+    public void isPastriesOrderedRead()
     {
       Pastry newPastry = new Pastry(6);
       Assert.AreEqual(6, newPastry.Ordered);
+    }
+    [TestMethod]
+    public void isPastryPriceRead()
+    {
+      Pastry newPastry = new Pastry(6);
       newPastry.SetPrice();
       Assert.AreEqual(10, newPastry.Price);
     }
-     [TestMethod]
+    [TestMethod]
     public void isPastryPriceLooping()
     {
       Pastry newPastry = new Pastry(10);
