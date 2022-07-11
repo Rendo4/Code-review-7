@@ -4,118 +4,102 @@ namespace Bakery
 {
   public class Bread
   {
-    private int _ordered;
-    private int _price;
+    public int Ordered { get; set; }
+    public int Price { get; set; }
     
     public Bread(int loaves)
     {
-      _ordered = loaves;
-      _price = 0;
-    }
-    public int getLoaves()
-    {
-      return _ordered;
-    }
-    public int getPrice()
-    {
-      return _price;
+      Ordered = loaves;
+      Price = 0;
     }
     public void SetPrice() 
     {
-      if (_ordered - 3 >= 0 )
+      if ( Ordered - 3 >= 0 )
       {
-        _ordered = _ordered - 3;
-        _price += 10;
-        if (_ordered > 0)
+        Ordered = Ordered - 3;
+        Price += 10;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-      if ( _ordered - 2 >= 0)
+      if ( Ordered - 2 >= 0)
       {
-        _ordered = _ordered - 2;
-        _price += 10;
-        if (_ordered > 0)
+        Ordered = Ordered - 2;
+        Price += 10;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-      if (_ordered - 1 >= 0)
+      if (Ordered - 1 >= 0)
       {
-        _ordered = -1;
-        _price += 5;
+        Ordered = -1;
+        Price += 5;
       }
     }
   }
   public class Pastry
   {
-     private int _ordered;
-    private int _price;
+    public int Ordered { get; set; }
+    public int Price { get; set; }
     
     public Pastry(int pastries)
     {
-      _ordered = pastries;
-      _price = 0;
-    }
-    public int getPastries()
-    {
-      return _ordered;
-    }
-    public int getPrice()
-    {
-      return _price;
+      Ordered = pastries;
+      Price = 0;
     }
     public void SetPrice()
     {
-      if ( _ordered >= 6)
+      if ( Ordered >= 6)
       {
-        _ordered -= 6;
-        _price += 10;
-        if (_ordered > 0)
+        Ordered -= 6;
+        Price += 10;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-      if ( _ordered >= 5)
+      if ( Ordered >= 5)
       {
-        _ordered -= 5;
-        _price += 9;
-        if (_ordered > 0)
+        Ordered -= 5;
+        Price += 9;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-       if ( _ordered >= 4)
+       if ( Ordered >= 4)
       {
-        _ordered -= 4;
-        _price += 7;
-        if (_ordered > 0)
+        Ordered -= 4;
+        Price += 7;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-       if ( _ordered >= 3)
+       if ( Ordered >= 3)
       {
-        _ordered -= 3;
-        _price += 5;
-        if (_ordered > 0)
+        Ordered -= 3;
+        Price += 5;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-       if ( _ordered >= 2)
+       if ( Ordered >= 2)
       {
-        _ordered -= 2;
-        _price += 3;
-        if (_ordered > 0)
+        Ordered -= 2;
+        Price += 3;
+        if (Ordered > 0)
         {
           SetPrice();
         }
       }
-       if ( _ordered >= 1)
+       if ( Ordered >= 1)
       {
-        _ordered -= 1;
-        _price += 2;
+        Ordered -= 1;
+        Price += 2;
       }
     }
   }
